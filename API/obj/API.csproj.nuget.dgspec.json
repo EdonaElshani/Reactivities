@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\API\\API.csproj": {}
+    "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\API\\API.csproj": {
+    "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\API\\API.csproj",
+        "projectPath": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\api\\API.csproj",
         "packagesPath": "C:\\Users\\PULSE Electronics\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\API\\obj\\",
+        "outputPath": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PULSE Electronics\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +45,12 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.2, )"
             },
