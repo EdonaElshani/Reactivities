@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\api\\API.csproj": {}
+    "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\api\\API.csproj": {
+    "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\api\\API.csproj",
+        "projectUniqueName": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\api\\API.csproj",
+        "projectPath": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\API\\API.csproj",
         "packagesPath": "C:\\Users\\PULSE Electronics\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\api\\obj\\",
+        "outputPath": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PULSE Electronics\\AppData\\Roaming\\NuGet\\NuGet.Config",
