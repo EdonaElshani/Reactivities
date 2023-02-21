@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\API\\API.csproj": {}
+    "C:\\Users\\Edona\\Desktop\\Reactivities\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\API\\API.csproj": {
+    "C:\\Users\\Edona\\Desktop\\Reactivities\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Edona\\Desktop\\Reactivities\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\PULSE Electronics\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\API\\obj\\",
+        "projectPath": "C:\\Users\\Edona\\Desktop\\Reactivities\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\Edona\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Edona\\Desktop\\Reactivities\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PULSE Electronics\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Edona\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\Application\\Application.csproj"
+              "C:\\Users\\Edona\\Desktop\\Reactivities\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\Edona\\Desktop\\Reactivities\\Application\\Application.csproj"
               }
             }
           }
@@ -78,21 +78,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\Application\\Application.csproj": {
+    "C:\\Users\\Edona\\Desktop\\Reactivities\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\Edona\\Desktop\\Reactivities\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\PULSE Electronics\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\Application\\obj\\",
+        "projectPath": "C:\\Users\\Edona\\Desktop\\Reactivities\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\Edona\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Edona\\Desktop\\Reactivities\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PULSE Electronics\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Edona\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -106,11 +106,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\Domain\\Domain.csproj"
+              "C:\\Users\\Edona\\Desktop\\Reactivities\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Edona\\Desktop\\Reactivities\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\Persistence\\Persistence.csproj"
+              "C:\\Users\\Edona\\Desktop\\Reactivities\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\Edona\\Desktop\\Reactivities\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -124,6 +124,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -140,21 +146,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\Domain\\Domain.csproj": {
+    "C:\\Users\\Edona\\Desktop\\Reactivities\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Edona\\Desktop\\Reactivities\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\PULSE Electronics\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\Edona\\Desktop\\Reactivities\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Edona\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Edona\\Desktop\\Reactivities\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PULSE Electronics\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Edona\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -195,21 +201,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\Edona\\Desktop\\Reactivities\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\Edona\\Desktop\\Reactivities\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\Persistence\\Persistence.csproj",
-        "packagesPath": "C:\\Users\\PULSE Electronics\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\Persistence\\obj\\",
+        "projectPath": "C:\\Users\\Edona\\Desktop\\Reactivities\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\Edona\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Edona\\Desktop\\Reactivities\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PULSE Electronics\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Edona\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -223,8 +229,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\PULSE Electronics\\Desktop\\Reactivities\\Domain\\Domain.csproj"
+              "C:\\Users\\Edona\\Desktop\\Reactivities\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Edona\\Desktop\\Reactivities\\Domain\\Domain.csproj"
               }
             }
           }
@@ -260,7 +266,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

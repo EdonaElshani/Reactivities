@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qsetKYmBdXyJf66RLjWFJYM05nQd4rZ9L3yE7qWffS+AqDIHuiXN5I0tMxQqLXaSBK9x/ZwRpSkpcAH+Ctyz2Q==",
+  "dgSpecHash": "hUWf431ObGgU1pl0IAOEHoUlPyNuXnawLU/jaNoRhltJ3ILfFD8VFtN9HlrWJHf/nLCD/SJtqe/RnySUahDDGA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Edona\\Desktop\\Reactivities\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\Edona\\Desktop\\Reactivities\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Edona\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\Edona\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
