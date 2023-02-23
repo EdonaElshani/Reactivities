@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "hUWf431ObGgU1pl0IAOEHoUlPyNuXnawLU/jaNoRhltJ3ILfFD8VFtN9HlrWJHf/nLCD/SJtqe/RnySUahDDGA==",
+  "dgSpecHash": "5Sn3j5mZVh3A6rMhWBwjljnYBKV2/lm8vYgzzphmfpHKEgEDJ+yM15y/PJPNPF02homLw1g2GU/G7ZP8zqHobQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Edona\\Desktop\\Reactivities\\Application\\Application.csproj",
+  "projectFilePath": "c:\\Users\\Edona\\Desktop\\Reactivities\\Application\\Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Edona\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Edona\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Edona\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\Edona\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\Edona\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
+    "C:\\Users\\Edona\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Edona\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.2\\microsoft.data.sqlite.core.7.0.2.nupkg.sha512",
     "C:\\Users\\Edona\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.2\\microsoft.entityframeworkcore.7.0.2.nupkg.sha512",
     "C:\\Users\\Edona\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.2\\microsoft.entityframeworkcore.abstractions.7.0.2.nupkg.sha512",
