@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5Sn3j5mZVh3A6rMhWBwjljnYBKV2/lm8vYgzzphmfpHKEgEDJ+yM15y/PJPNPF02homLw1g2GU/G7ZP8zqHobQ==",
+  "dgSpecHash": "DkLuv8Qbkyxdlbk1nOXk1PP/yIsgpMb4Mn7XkgPPxU1fq2jiwFHRQUq09Kn1g5jBTsDQIUPj1gZRmsasFEI1cQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Edona\\Desktop\\Reactivities\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\Edona\\Desktop\\Reactivities\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Edona\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Edona\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
