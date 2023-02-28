@@ -15,9 +15,9 @@ namespace Application.Activities
             {
                 _context = context;
             }
-            public Task<List<Activity>> Handle(Query request, CancellationToken cancellationToken)
+            public async Task<List<Activity>> Handle(Query request, CancellationToken cancellationToken)
             {
-                throw new NotImplementedException();
+                return _context.Activities.ToList();
             }
         }
     }
