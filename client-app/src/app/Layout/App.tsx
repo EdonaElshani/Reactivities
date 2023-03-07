@@ -19,7 +19,7 @@ function App() {
   return (
     <div>
       <Header as="h2" content="Reactivities" icon="users" />
-      <List>
+      <List className='container'>
         <ActivityDashboard activities={activities} />
       </List>
     </div>
