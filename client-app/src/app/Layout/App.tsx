@@ -9,6 +9,8 @@ import Navbar from './Navbar';
 function App() {
   const [activities, setActivities] = useState<Activity[]>([]);
   const [selectedActivity, setSelectedActivity] = useState<Activity | undefined>(undefined);
+  const [editMode, setEditMode] = useState(false);
+  
   useEffect(() => {
     axios
       .get<Activity[]>("http://localhost:5000/api/activities")
@@ -23,14 +25,19 @@ function handleSelectActivity(id :string)
   setSelectedActivity(activities.find(x=>x.id === id));
 }
 
-function handleCancelSelectActivity()
-{
+function handleCancelSelectActivity() {
   setSelectedActivity(undefined);
 }
-
+function handleFormOpen(id?: string) {
+  id ? handleSelectActivity(id) : handleCancelSelectActivity();
+  setEditMode(true);
+}
+function handleFormClose() {
+  setEditMode(false);
+}
   return (
     <div>
-      <Navbar/>
+      <Navbar openForm={handleFormOpen}/>
       <Container>
       <List style={{marginTop: '7em'}}>
         <ActivityDashboard 
@@ -38,6 +45,9 @@ function handleCancelSelectActivity()
         selectedActivity={selectedActivity}
         selectActivity={handleSelectActivity}
         cancelSelectActivity={handleCancelSelectActivity}
+        editMode={editMode}
+        openForm={handleFormOpen}
+        closeForm={handleFormClose}
         />
       </List>
       </Container>
