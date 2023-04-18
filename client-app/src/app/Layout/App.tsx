@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
-import { Container, Header } from "semantic-ui-react";
+import { Container } from "semantic-ui-react";
 import List from "semantic-ui-react/dist/commonjs/elements/List";
 import { Activity } from "../models/activity";
 import ActivityDashboard from "../../features/activities/dashboard/ActivityDashboard";
 import Navbar from "./Navbar";
+import { v4 as uuid } from "uuid";
 
 function App() {
   const [activities, setActivities] = useState<Activity[]>([]);
@@ -42,7 +43,7 @@ function App() {
           ...activities.filter((x) => x.id !== activity.id),
           activity,
         ])
-      : setActivities([...activities, activity]);
+      : setActivities([...activities, { ...activity, id: uuid() }]);
     setEditMode(false);
     setSelectedActivity(activity);
   }

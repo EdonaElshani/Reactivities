@@ -1,12 +1,15 @@
-import React from 'react'
-import { Button, Card } from 'semantic-ui-react'
-import { Activity } from '../../../app/models/activity'
+import { Button, Card } from "semantic-ui-react";
+import { Activity } from "../../../app/models/activity";
 interface Props {
-    activity: Activity;
-    cancelSelectActivity: () => void;
-    openForm: (id : string) => void;
+  activity: Activity;
+  cancelSelectActivity: () => void;
+  openForm: (id: string) => void;
 }
-const ActivityDetails = ({ activity, cancelSelectActivity, openForm }: Props) => {
+const ActivityDetails = ({
+  activity,
+  cancelSelectActivity,
+  openForm,
+}: Props) => {
   return (
     <div>
       <div className="ui card fluid">
@@ -22,7 +25,12 @@ const ActivityDetails = ({ activity, cancelSelectActivity, openForm }: Props) =>
         </div>
         <Card.Content extra>
           <Button.Group widths="2">
-            <Button basic color="blue" content="Edit" onClick={() => openForm(activity.id)} />
+            <Button
+              basic
+              color="blue"
+              content="Edit"
+              onClick={() => openForm(activity.id)}
+            />
             <Button
               onClick={cancelSelectActivity}
               basic
@@ -36,4 +44,4 @@ const ActivityDetails = ({ activity, cancelSelectActivity, openForm }: Props) =>
   );
 };
 
-export default ActivityDetails
+export default ActivityDetails;
