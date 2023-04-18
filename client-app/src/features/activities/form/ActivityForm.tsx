@@ -4,8 +4,13 @@ import { Activity } from "../../../app/models/activity";
 interface Props {
   closeForm: () => void;
   activity: Activity | void;
+  createOrEdit: (activity: Activity) => void;
 }
-const ActivityForm = ({ closeForm, activity: selectedActivity }: Props) => {
+const ActivityForm = ({
+  closeForm,
+  activity: selectedActivity,
+  createOrEdit,
+}: Props) => {
   const initialState = selectedActivity ?? {
     id: "",
     title: "",
@@ -20,11 +25,13 @@ const ActivityForm = ({ closeForm, activity: selectedActivity }: Props) => {
     event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) {
     const { name, value } = event.target;
+    //The reason [name] is in brackets is because it is a computed property name.
+    //So the property name is determined dynamically at runtime based on the value of the name variable.
     setActivity({ ...activity, [name]: value });
   }
   function handleSubmit() {
     console.log(activity);
-    
+    createOrEdit(activity);
   }
   return (
     <>
