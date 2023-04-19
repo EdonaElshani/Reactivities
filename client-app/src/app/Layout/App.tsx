@@ -64,7 +64,10 @@ function App() {
     }
   }
   function handleDelete(id: string) {
-    setActivities([...activities.filter((x) => x.id !== id)]);
+    agent.Activities.delete(id).then(() => {
+      setSubmitting(true);
+      setActivities([...activities.filter((x) => x.id !== id)]);
+    });
   }
 
   if (loading) {
