@@ -85,6 +85,7 @@ function App() {
             closeForm={handleFormClose}
             createOrEdit={handleCreateOrEditActivity}
             deleteActivity={handleDelete}
+            submitting={submitting}
           />
         </List>
       </Container>
