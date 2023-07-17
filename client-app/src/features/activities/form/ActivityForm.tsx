@@ -1,11 +1,24 @@
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useState, useEffect } from "react";
 import { Button, Form, Segment } from "semantic-ui-react";
 import { useStore } from "../../../app/stores/store";
 import { observer } from "mobx-react-lite";
+import { useParams } from "react-router-dom";
+import { Activity } from "../../../app/models/activity";
+import LoadingComponent from "../../../app/Layout/LoadingComponent";
 
 const ActivityForm = () => {
   const { activityStore } = useStore();
-  const initialState = activityStore.selectedActivity ?? {
+  const {
+    selectedActivity,
+    createActivity,
+    updateActivity,
+    loading,
+    loadActivity,
+    loadingInitial,
+  } = activityStore;
+
+  const { id } = useParams();
+  const [activity, setActivity] = useState<Activity>({
     id: "",
     title: "",
     category: "",
@@ -13,8 +26,17 @@ const ActivityForm = () => {
     date: "",
     city: "",
     venue: "",
-  };
-  const [activity, setActivity] = useState(initialState);
+  });
+
+  useEffect(() => {
+    if (id) {
+      loadActivity(id).then((activity) => {
+        setActivity(activity!);
+      });
+    }
+  }, [id, loadActivity]);
+
+
   function handleInputChange(
     event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) {
@@ -24,11 +46,12 @@ const ActivityForm = () => {
     setActivity({ ...activity, [name]: value });
   }
   function handleSubmit() {
-    console.log(activity);
     activity.id
       ? activityStore.updateActivity(activity)
       : activityStore.createActivity(activity);
   }
+
+  if(loadingInitial) return <LoadingComponent content="Loading Activity..."/>
   return (
     <>
       <Segment clearing>
@@ -77,12 +100,7 @@ const ActivityForm = () => {
             content="Submit"
             loading={activityStore.loading}
           />
-          <Button
-            floated="right"
-            type="button"
-            content="Cancel"
-            onClick={activityStore.closeForm}
-          />
+          <Button floated="right" type="button" content="Cancel" />
         </Form>
       </Segment>
     </>
