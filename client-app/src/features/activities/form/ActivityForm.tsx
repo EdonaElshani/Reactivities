@@ -2,7 +2,7 @@ import { ChangeEvent, useState, useEffect } from "react";
 import { Button, Form, Segment } from "semantic-ui-react";
 import { useStore } from "../../../app/stores/store";
 import { observer } from "mobx-react-lite";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Activity } from "../../../app/models/activity";
 import LoadingComponent from "../../../app/Layout/LoadingComponent";
 
@@ -16,7 +16,7 @@ const ActivityForm = () => {
     loadActivity,
     loadingInitial,
   } = activityStore;
-
+  const navigation = useNavigate();
   const { id } = useParams();
   const [activity, setActivity] = useState<Activity>({
     id: "",
@@ -46,12 +46,15 @@ const ActivityForm = () => {
     setActivity({ ...activity, [name]: value });
   }
   function handleSubmit() {
-    activity.id
-      ? activityStore.updateActivity(activity)
-      : activityStore.createActivity(activity);
+    if (!activity.id) {
+      activity.id = uuid();
+      createActivity(activity).then(() => navigation(`/activities/${activity.id}`))
+    } else {
+      updateActivity(activity).then(() => navigation(`/activities/${activity.id}`))
+    }
   }
 
-  if(loadingInitial) return <LoadingComponent content="Loading Activity..."/>
+  if (loadingInitial) return <LoadingComponent content="Loading Activity..." />
   return (
     <>
       <Segment clearing>
@@ -108,3 +111,7 @@ const ActivityForm = () => {
 };
 
 export default observer(ActivityForm);
+function uuid(): string {
+  throw new Error("Function not implemented.");
+}
+
